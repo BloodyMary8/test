@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Matcher {
     public static void main(String[] args) {
         String text = "name@gmail.com @gmail.com";
-        Pattern pattern = Pattern.compile("^[A-Za-z0-99+_.-]+@(.+)$");
+        Pattern pattern = Pattern.compile("^[A-Za-z0-999+_.-]+@(.+)$");
         Matcher matcher = pattern.matcher(text);
 
         while (matcher.find()) {
